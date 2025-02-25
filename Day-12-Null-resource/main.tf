@@ -57,7 +57,7 @@ resource "aws_iam_instance_profile" "ec2_instance_profile" {
 
 # EC2 instance with IAM instance profile attached
 resource "aws_instance" "web_server" {
-  ami                  = "ami-085ad6ae776d8f09c" # Update with a valid AMI ID
+  ami                  = "ami-053a45fff0a704a47" # Update with a valid AMI ID
   instance_type        = "t2.micro"
   key_name             = aws_key_pair.example.key_name
   security_groups      = ["default"]
